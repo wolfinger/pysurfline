@@ -353,13 +353,12 @@ div.rendered_html tbody tr:hover {
 </style>
 <section id="Produce-a-surf-report">
 <h1>Produce a surf report<a class="headerlink" href="#Produce-a-surf-report" title="Permalink to this headline"></a></h1>
-<p>A <code class="docutils literal notranslate"><span class="pre">pysurfline.SurfReport</span></code> objects inherit from a simple <code class="docutils literal notranslate"><span class="pre">pysurfline.SpotForecast</span></code> object and features additional reporting functionalities, such as plotting methods and easily readable outputs.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">SurfReport</span></code> object features additional reporting functionalities, such as plotting methods and easily readable surf reports.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pysurfline</span> <span class="kn">import</span> <span class="n">SpotForecast</span>
-<span class="kn">from</span> <span class="nn">pysurfline</span> <span class="kn">import</span> <span class="n">SurfReport</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pysurfline</span> <span class="kn">import</span> <span class="n">SurfReport</span>
 </pre></div>
 </div>
 </div>
@@ -416,7 +415,7 @@ div.rendered_html tbody tr:hover {
  &#39;ForecastGetter(Type:weather, Status:200)&#39;]
 </pre></div></div>
 </div>
-<p>With respect to the <code class="docutils literal notranslate"><span class="pre">SpotForecast</span></code> objects, that stores separately all the raw response data as class attributes, the <code class="docutils literal notranslate"><span class="pre">SurfReport</span></code> object has the <code class="docutils literal notranslate"><span class="pre">df</span></code> attribute to easily inspect all the hourly data fetched from the Surfline servers and merged into a readable <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> object.</p>
+<p>With respect to the <code class="docutils literal notranslate"><span class="pre">SpotForecast</span></code> objects, that stores separately all the raw response data as class attributes, the <code class="docutils literal notranslate"><span class="pre">SurfReport</span></code> object has the additional <code class="docutils literal notranslate"><span class="pre">df</span></code> attribute to easily inspect all the hourly data fetched from the Surfline servers merged into a readable <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> object.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
@@ -483,89 +482,89 @@ div.rendered_html tbody tr:hover {
   </thead>
   <tbody>
     <tr>
-      <th>2022-02-15 10:00:00</th>
+      <th>2022-02-19 10:00:00</th>
       <td>-10</td>
-      <td>2.425576</td>
-      <td>3.348259</td>
-      <td>2</td>
-      <td>[{'height': 1.49573, 'period': 9, 'direction':...</td>
+      <td>1.342033</td>
+      <td>1.9896</td>
+      <td>0</td>
+      <td>[{'height': 1.60392, 'period': 13, 'direction'...</td>
       <td>-10</td>
-      <td>19.52784</td>
-      <td>62.20807</td>
+      <td>16.97483</td>
+      <td>36.62702</td>
       <td>Cross-shore</td>
-      <td>20.89105</td>
+      <td>18.72099</td>
       <td>0</td>
       <td>-10</td>
-      <td>22.05899</td>
+      <td>22.39011</td>
+      <td>NIGHT_BRIEF_SHOWERS_POSSIBLE</td>
+    </tr>
+    <tr>
+      <th>2022-02-19 13:00:00</th>
+      <td>-10</td>
+      <td>1.620883</td>
+      <td>2.2504</td>
+      <td>0</td>
+      <td>[{'height': 1.63176, 'period': 13, 'direction'...</td>
+      <td>-10</td>
+      <td>16.07982</td>
+      <td>30.38820</td>
+      <td>Cross-shore</td>
+      <td>17.02832</td>
+      <td>0</td>
+      <td>-10</td>
+      <td>22.21567</td>
       <td>NIGHT_CLEAR</td>
     </tr>
     <tr>
-      <th>2022-02-15 13:00:00</th>
+      <th>2022-02-19 16:00:00</th>
       <td>-10</td>
-      <td>2.223929</td>
-      <td>3.227976</td>
-      <td>2</td>
-      <td>[{'height': 1.47839, 'period': 9, 'direction':...</td>
+      <td>1.959733</td>
+      <td>2.2712</td>
+      <td>0</td>
+      <td>[{'height': 1.75356, 'period': 12, 'direction'...</td>
       <td>-10</td>
-      <td>25.51237</td>
-      <td>74.83075</td>
+      <td>14.88262</td>
+      <td>31.67077</td>
       <td>Cross-shore</td>
-      <td>28.44089</td>
+      <td>14.88262</td>
       <td>0</td>
       <td>-10</td>
-      <td>21.84009</td>
-      <td>NIGHT_CLEAR</td>
+      <td>22.24850</td>
+      <td>NIGHT_MOSTLY_CLOUDY</td>
     </tr>
     <tr>
-      <th>2022-02-15 16:00:00</th>
+      <th>2022-02-19 19:00:00</th>
       <td>-10</td>
-      <td>2.512282</td>
-      <td>3.697694</td>
+      <td>1.918583</td>
+      <td>2.4420</td>
       <td>2</td>
-      <td>[{'height': 1.45506, 'period': 9, 'direction':...</td>
+      <td>[{'height': 1.76186, 'period': 12, 'direction'...</td>
       <td>-10</td>
-      <td>23.08405</td>
-      <td>92.03106</td>
-      <td>Offshore</td>
-      <td>26.28000</td>
-      <td>2</td>
-      <td>-10</td>
-      <td>22.05951</td>
-      <td>NIGHT_CLEAR</td>
-    </tr>
-    <tr>
-      <th>2022-02-15 19:00:00</th>
-      <td>-10</td>
-      <td>2.533467</td>
-      <td>3.742283</td>
-      <td>2</td>
-      <td>[{'height': 1.35026, 'period': 9, 'direction':...</td>
-      <td>-10</td>
-      <td>19.02943</td>
-      <td>74.52762</td>
+      <td>13.09262</td>
+      <td>36.42174</td>
       <td>Cross-shore</td>
-      <td>19.44187</td>
+      <td>13.09262</td>
       <td>0</td>
       <td>-10</td>
-      <td>22.63235</td>
-      <td>CLEAR</td>
+      <td>22.60571</td>
+      <td>BRIEF_SHOWERS_POSSIBLE</td>
     </tr>
     <tr>
-      <th>2022-02-15 22:00:00</th>
+      <th>2022-02-19 22:00:00</th>
       <td>-10</td>
-      <td>2.928667</td>
-      <td>4.116333</td>
+      <td>2.077433</td>
+      <td>2.5328</td>
       <td>2</td>
-      <td>[{'height': 1.27662, 'period': 9, 'direction':...</td>
+      <td>[{'height': 1.69075, 'period': 12, 'direction'...</td>
       <td>-10</td>
-      <td>21.47713</td>
-      <td>74.64142</td>
-      <td>Cross-shore</td>
-      <td>22.71399</td>
+      <td>17.91688</td>
+      <td>21.11892</td>
+      <td>Onshore</td>
+      <td>17.91688</td>
       <td>0</td>
       <td>-10</td>
-      <td>23.13605</td>
-      <td>CLEAR</td>
+      <td>22.84024</td>
+      <td>BRIEF_SHOWERS_POSSIBLE</td>
     </tr>
   </tbody>
 </table>
@@ -620,44 +619,44 @@ div.rendered_html tbody tr:hover {
   </thead>
   <tbody>
     <tr>
-      <th>2022-02-15 10:00:00</th>
-      <td>2.425576</td>
-      <td>3.348259</td>
-      <td>19.52784</td>
+      <th>2022-02-19 10:00:00</th>
+      <td>1.342033</td>
+      <td>1.9896</td>
+      <td>16.97483</td>
       <td>Cross-shore</td>
-      <td>62.20807</td>
+      <td>36.62702</td>
     </tr>
     <tr>
-      <th>2022-02-15 13:00:00</th>
-      <td>2.223929</td>
-      <td>3.227976</td>
-      <td>25.51237</td>
+      <th>2022-02-19 13:00:00</th>
+      <td>1.620883</td>
+      <td>2.2504</td>
+      <td>16.07982</td>
       <td>Cross-shore</td>
-      <td>74.83075</td>
+      <td>30.38820</td>
     </tr>
     <tr>
-      <th>2022-02-15 16:00:00</th>
-      <td>2.512282</td>
-      <td>3.697694</td>
-      <td>23.08405</td>
-      <td>Offshore</td>
-      <td>92.03106</td>
+      <th>2022-02-19 16:00:00</th>
+      <td>1.959733</td>
+      <td>2.2712</td>
+      <td>14.88262</td>
+      <td>Cross-shore</td>
+      <td>31.67077</td>
     </tr>
     <tr>
-      <th>2022-02-15 19:00:00</th>
-      <td>2.533467</td>
-      <td>3.742283</td>
-      <td>19.02943</td>
+      <th>2022-02-19 19:00:00</th>
+      <td>1.918583</td>
+      <td>2.4420</td>
+      <td>13.09262</td>
       <td>Cross-shore</td>
-      <td>74.52762</td>
+      <td>36.42174</td>
     </tr>
     <tr>
-      <th>2022-02-15 22:00:00</th>
-      <td>2.928667</td>
-      <td>4.116333</td>
-      <td>21.47713</td>
-      <td>Cross-shore</td>
-      <td>74.64142</td>
+      <th>2022-02-19 22:00:00</th>
+      <td>2.077433</td>
+      <td>2.5328</td>
+      <td>17.91688</td>
+      <td>Onshore</td>
+      <td>21.11892</td>
     </tr>
   </tbody>
 </table>
